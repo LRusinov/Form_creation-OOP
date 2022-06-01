@@ -67,6 +67,12 @@ build CMakeFiles/HW2.dir/Control.cpp.obj: CXX_COMPILER__HW2_Debug C$:/Users/Lyub
   OBJECT_DIR = CMakeFiles\HW2.dir
   OBJECT_FILE_DIR = CMakeFiles\HW2.dir
 
+build CMakeFiles/HW2.dir/Form.cpp.obj: CXX_COMPILER__HW2_Debug C$:/Users/Lyubo/CLionProjects/HW2/Form.cpp || cmake_object_order_depends_target_HW2
+  DEP_FILE = CMakeFiles\HW2.dir\Form.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\HW2.dir
+  OBJECT_FILE_DIR = CMakeFiles\HW2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HW2
@@ -75,7 +81,7 @@ build CMakeFiles/HW2.dir/Control.cpp.obj: CXX_COMPILER__HW2_Debug C$:/Users/Lyub
 #############################################
 # Link the executable HW2.exe
 
-build HW2.exe: CXX_EXECUTABLE_LINKER__HW2_Debug CMakeFiles/HW2.dir/String.cpp.obj CMakeFiles/HW2.dir/main.cpp.obj CMakeFiles/HW2.dir/Control.cpp.obj
+build HW2.exe: CXX_EXECUTABLE_LINKER__HW2_Debug CMakeFiles/HW2.dir/String.cpp.obj CMakeFiles/HW2.dir/main.cpp.obj CMakeFiles/HW2.dir/Control.cpp.obj CMakeFiles/HW2.dir/Form.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HW2.dir
