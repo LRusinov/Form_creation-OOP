@@ -32,7 +32,7 @@ public:
     }
 
     void visualisation() const override {
-        std::cout << list[selected] << std::endl;
+        std::cout << list[selected];
     }
 };
 

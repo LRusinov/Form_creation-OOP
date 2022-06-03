@@ -20,7 +20,7 @@ int main() {
 
     Label lbl(1, 0, "label text: ");
 
-    ListBox lBox(2, 0, vec, 1);
+    ListBox lBox(0, 2, vec, 1);
 
     RadioBox rButton(6, 0, "a;b;c;", 1);
 

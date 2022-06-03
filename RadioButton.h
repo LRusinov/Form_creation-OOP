@@ -56,8 +56,13 @@ public:
     void visualisation() const override {
         for (int i = 0; i < options.get_size(); ++i) {
             options[i].visualisation();
-        }
+
+            if (i + 1 != options.get_size()) {
+                std::cout << std::endl;
+            }
     }
+}
+
 };
 
 #endif //HW2_RADIOBUTTON_H

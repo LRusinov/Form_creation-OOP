@@ -48,11 +48,14 @@ String Control::idToString() const {
     return numInString;
 }
 
-const int Control::getPosition(int n) const {
+int Control::getPosition(int n) const {
     if (n == 0) {
         return position[0];
     } else {
         return position[1];
     }
+}
+int Control::getWidth()const{
+
 }
 

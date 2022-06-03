@@ -19,12 +19,12 @@ public:
 
     //Constructors
     String();
-    String(const char* _str,size_t _size = 0);
+    String(const char* _str,size_t size = 0);
     String(const String& other);
     ~String();
 
     // Methods
-    void resize(const size_t _size);
+    void resize(const size_t size);
     void Concat(const String& other);
     void pushBack(const char element);
     size_t get_length()const;

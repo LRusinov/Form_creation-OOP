@@ -27,6 +27,7 @@ public:
     }
 
     void setStatus() {
+
         int counter = 0;
         while (counter < size.width * size.height) {
             for (int i = 0; i < size.height; ++i) {

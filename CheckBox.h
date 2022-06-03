@@ -45,7 +45,7 @@ public:
         else{
             std::cout<<"[ ]";
         }
-        std::cout << text<<std::endl;
+        std::cout << text;
     }
 };
 

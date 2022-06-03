@@ -34,7 +34,7 @@ class Control {
 protected:
     static int nextID;
 public:
-    const int getPosition(int n) const;
+    int getPosition(int n) const;
 
 protected:
     const int id = ++nextID;
@@ -52,7 +52,7 @@ public:
     void setText(const String &text);
 
     void setPosition(const int coord1, const int coord2);
-
+    int getWidth()const;
     virtual void printDescription() const = 0;
 
     const int getID() const;
