@@ -48,3 +48,8 @@ String Control::idToString() const {
     return numInString;
 }
 
+const int *Control::getPosition() const {
+    int pos[2] = {position[0],position[1]};
+    return pos;
+}
+

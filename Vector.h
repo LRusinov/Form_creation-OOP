@@ -136,7 +136,8 @@ public:
         newData[index] = element;
 
         for (size_t i = index + 1; i < size; i++) {
-            newData[i] = data[i];
+
+            newData[i] = data[i-1];
         }
 
         destroy();

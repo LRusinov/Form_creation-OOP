@@ -22,26 +22,33 @@ public:
         size_t sizeOfStr = string.get_length();
         int optionsCounter = 0;
         int maxLen=0;
-        String* option = new String();
+        String option;
         for (size_t i = 0; i < sizeOfStr; ++i) {
             if(string[i]!=';'){
-                option->pushBack(string[i]);
+                option.pushBack(string[i]);
             }
             else {
-                if(option->get_length()>maxLen){
-                    maxLen=option->get_length();
+                if(option.get_length()>maxLen){
+                    maxLen=option.get_length();
                 }
                 optionsCounter++;
-                CheckBox newCheckBox(x+optionsCounter,option->get_length(),*option, false);
+                bool flag=false;
+                if(optionsCounter == selected+1){
+                    flag = true;
+                }
+
+                CheckBox newCheckBox(x+optionsCounter,option.get_length(),option, flag);
+
+                flag=false;
                 options.pushBack( newCheckBox);
-                delete option;
-                option = new String();
+                option = "";
             }
         }
-        delete option;
+options[0].printDescription();
         optionsCounter++;
         size=Size(maxLen,optionsCounter);
-        status = options[selected].getText();
+        //status=options[selected].getText();
+
     }
     void printDescription()const override{
         options[selected].printDescription();

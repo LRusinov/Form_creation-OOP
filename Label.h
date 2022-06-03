@@ -8,7 +8,7 @@
 #include "Control.h"
 
 class Label : private Control {
-private:
+public:
     Label(const int x, const int y, const String &content) {
         size = Size(content.get_length(), 1);
         type = ControlType::OUTPUTCONTROL;

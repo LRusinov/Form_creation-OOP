@@ -24,11 +24,13 @@ public:
     }
 
     CheckBox &operator=(const CheckBox &other) {
+
         this->size = other.size;
         this->type = other.type;
         setPosition(other.position[0], other.position[1]);
         this->status = other.status;
-        this->text = text;
+        this->text = other.text;
+        return *this;
     }
 
     void printDescription() const override {
@@ -38,5 +40,9 @@ public:
         return text;
     }
 };
+
+CheckBox::CheckBox() {
+
+}
 
 #endif //HW2_CHECKBOX_H

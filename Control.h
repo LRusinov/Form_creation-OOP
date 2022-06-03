@@ -29,6 +29,10 @@ struct Size{
 class Control {
 protected:
     static int nextID;
+public:
+    const int *getPosition() const;
+
+protected:
     const int id = ++nextID;
     int position[2];
     Size size;
