@@ -53,6 +53,7 @@ public:
     const int getID()const;
     String getStatus()const;
     String idToString()const;
+    virtual void visualisation()const =0;
 };
 
 #endif //HW2_CONTROL_H

@@ -44,14 +44,19 @@ public:
                 option = "";
             }
         }
-options[0].printDescription();
         optionsCounter++;
         size=Size(maxLen,optionsCounter);
-        //status=options[selected].getText();
+        status=options[selected].getText();
 
     }
     void printDescription()const override{
         options[selected].printDescription();
+    }
+
+    void visualisation()const override{
+        for (int i = 0; i < options.get_size(); ++i) {
+            options[i].visualisation();
+        }
     }
 };
 

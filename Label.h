@@ -19,6 +19,9 @@ public:
     void printDescription()const override{
         std::cout<<text<<std::endl;
     }
+    void visualisation()const override{
+        std::cout<<text;
+    }
 };
 
 #endif //HW2_LABEL_H

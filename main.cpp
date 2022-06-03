@@ -14,11 +14,20 @@ int main() {
     Vector<String> vec;
     vec.pushBack("ab");
     vec.pushBack("bb");
-CheckBox cBox(0,0,"abv",false);
-Label lbl(1,0,"label text");
-ListBox lBox(2,0,vec,1);
-RadioBox rButton(6,0,"a;b;c;",0);//greshno
-TextBox tBox(10,0,"1234 6789",3,4);
 
+    CheckBox cBox(0,0,"abv",true);
+    cBox.visualisation();
+
+    Label lbl(1,0,"label text: ");
+    lbl.visualisation();
+
+    ListBox lBox(2,0,vec,1);
+    lBox.visualisation();
+
+    RadioBox rButton(6,0,"a;b;c;",1);
+    rButton.visualisation();
+
+    TextBox tBox(10,0,"1234 67sdfsdfsd89",3,4);
+    tBox.visualisation();
     return 0;
 }

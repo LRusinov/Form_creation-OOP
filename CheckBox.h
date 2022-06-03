@@ -39,6 +39,14 @@ public:
     String getText()const{
         return text;
     }
+    void visualisation()const override{
+        if(status == "Checked"){
+            std::cout<<"[X]";}
+        else{
+            std::cout<<"[ ]";
+        }
+        std::cout << text<<std::endl;
+    }
 };
 
 CheckBox::CheckBox() {

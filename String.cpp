@@ -15,7 +15,9 @@ String::String(const char* str, size_t size) {
 }
 
 String::String(const String& other) {
-    copy(other);
+    str = new char[other.size + 1];
+    strcpy(this->str, other.str);
+    size = other.size;
 }
 
 String::~String() {

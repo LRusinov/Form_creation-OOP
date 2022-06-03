@@ -38,6 +38,11 @@ public:
             }
         }
     }
+    void visualisation()const override{
+        for (int i = 0; i <collection.get_size() ; ++i) {
+            collection[i]->visualisation();
+        }
+    }
 };
 
 #endif //HW2_PANEL_H

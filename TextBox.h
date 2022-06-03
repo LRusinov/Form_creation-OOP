@@ -20,9 +20,9 @@ public:
     void printDescription() const override {
         std::cout << text << std::endl;
     }
-String getText(){
-    return text;
-}
+    String getText(){
+        return text;
+    }
     void setStatus() {
         int counter = 0;
         while (counter < size.width * size.height) {
@@ -35,7 +35,9 @@ String getText(){
             }
         }
     }
-
+    void visualisation()const override{
+        std::cout<<status;
+    }
 };
 
 #endif //HW2_TEXTBOX_H
