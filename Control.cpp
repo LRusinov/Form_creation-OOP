@@ -23,7 +23,7 @@ void Control::setPosition(const int coord1, const int coord2) {
     position[1] = coord2;
 }
 
-const int Control::getID() const {
+int Control::getID() const {
     return id;
 }
 

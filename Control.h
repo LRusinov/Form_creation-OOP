@@ -55,7 +55,7 @@ public:
     int getWidth()const;
     virtual void printDescription() const = 0;
 
-    const int getID() const;
+    int getID() const;
 
     String getStatus() const;
 
