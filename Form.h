@@ -9,13 +9,15 @@
 #include "Control.h"
 #include "Vector.h"
 
-class Form{
+class Form {
 private:
-    Vector<Control*> controls;
+    Vector<Control *> controls;
     String name;
 public:
     void preview();
-    void addControl(Control* newControl);
+
+    void addControl(Control *newControl);
 
 };
+
 #endif //HW2_FORM_H

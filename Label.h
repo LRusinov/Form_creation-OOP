@@ -7,7 +7,7 @@
 
 #include "Control.h"
 
-class Label : private Control {
+class Label : public Control {
 public:
     Label(const int x, const int y, const String &content) {
         size = Size(content.get_length(), 1);
@@ -16,11 +16,13 @@ public:
         text = content;
         status = text;
     }
-    void printDescription()const override{
-        std::cout<<text<<std::endl;
+
+    void printDescription() const override {
+        std::cout << text << std::endl;
     }
-    void visualisation()const override{
-        std::cout<<text;
+
+    void visualisation() const override {
+        std::cout << text;
     }
 };
 

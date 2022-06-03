@@ -17,17 +17,20 @@ public:
         setPosition(x, y);
         setStatus();
     }
+
     void printDescription() const override {
         std::cout << text << std::endl;
     }
-    String getText(){
+
+    String getText() {
         return text;
     }
+
     void setStatus() {
         int counter = 0;
         while (counter < size.width * size.height) {
-            for (int i = 0; i <size.height; ++i) {
-                for (int j = 0; j < size.width ; ++j) {
+            for (int i = 0; i < size.height; ++i) {
+                for (int j = 0; j < size.width; ++j) {
                     status.pushBack(text[counter]);
                     counter++;
                 }
@@ -35,8 +38,9 @@ public:
             }
         }
     }
-    void visualisation()const override{
-        std::cout<<status;
+
+    void visualisation() const override {
+        std::cout << status;
     }
 };
 

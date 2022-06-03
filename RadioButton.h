@@ -18,42 +18,42 @@ public:
         type = ControlType::INPUTCONTROL;
         this->text = string;
         this->selected = selected;
-        setPosition(x,y);
+        setPosition(x, y);
         size_t sizeOfStr = string.get_length();
         int optionsCounter = 0;
-        int maxLen=0;
+        int maxLen = 0;
         String option;
         for (size_t i = 0; i < sizeOfStr; ++i) {
-            if(string[i]!=';'){
+            if (string[i] != ';') {
                 option.pushBack(string[i]);
-            }
-            else {
-                if(option.get_length()>maxLen){
-                    maxLen=option.get_length();
+            } else {
+                if (option.get_length() > maxLen) {
+                    maxLen = option.get_length();
                 }
                 optionsCounter++;
-                bool flag=false;
-                if(optionsCounter == selected+1){
+                bool flag = false;
+                if (optionsCounter == selected + 1) {
                     flag = true;
                 }
 
-                CheckBox newCheckBox(x+optionsCounter,option.get_length(),option, flag);
+                CheckBox newCheckBox(x + optionsCounter, option.get_length(), option, flag);
 
-                flag=false;
-                options.pushBack( newCheckBox);
+                flag = false;
+                options.pushBack(newCheckBox);
                 option = "";
             }
         }
         optionsCounter++;
-        size=Size(maxLen,optionsCounter);
-        status=options[selected].getText();
+        size = Size(maxLen, optionsCounter);
+        status = options[selected].getText();
 
     }
-    void printDescription()const override{
+
+    void printDescription() const override {
         options[selected].printDescription();
     }
 
-    void visualisation()const override{
+    void visualisation() const override {
         for (int i = 0; i < options.get_size(); ++i) {
             options[i].visualisation();
         }

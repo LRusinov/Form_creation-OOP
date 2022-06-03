@@ -30,8 +30,9 @@ public:
         }
         std::cout << std::endl;
     }
-    void visualisation()const override{
-        std::cout <<list[selected]<< std::endl;
+
+    void visualisation() const override {
+        std::cout << list[selected] << std::endl;
     }
 };
 

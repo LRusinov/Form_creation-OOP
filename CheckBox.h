@@ -7,7 +7,7 @@
 
 #include "Control.h"
 
-class CheckBox : private Control {
+class CheckBox : public Control {
 public:
     CheckBox();
 

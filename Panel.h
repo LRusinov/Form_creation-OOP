@@ -38,8 +38,9 @@ public:
             }
         }
     }
-    void visualisation()const override{
-        for (int i = 0; i <collection.get_size() ; ++i) {
+
+    void visualisation() const override {
+        for (int i = 0; i < collection.get_size(); ++i) {
             collection[i]->visualisation();
         }
     }
