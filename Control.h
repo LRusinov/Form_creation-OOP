@@ -53,7 +53,7 @@ public:
 
     void setText(const String &text);
 
-    void setPosition(const int coord1, const int coord2);
+    void setPosition(int coord1, int coord2);
 
     int getWidth() const;
 

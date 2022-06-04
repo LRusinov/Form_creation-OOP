@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -128,6 +128,30 @@ HW2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/build
 .PHONY : HW2/fast
 
+CheckBox.obj: CheckBox.cpp.obj
+.PHONY : CheckBox.obj
+
+# target to build an object file
+CheckBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/CheckBox.cpp.obj
+.PHONY : CheckBox.cpp.obj
+
+CheckBox.i: CheckBox.cpp.i
+.PHONY : CheckBox.i
+
+# target to preprocess a source file
+CheckBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/CheckBox.cpp.i
+.PHONY : CheckBox.cpp.i
+
+CheckBox.s: CheckBox.cpp.s
+.PHONY : CheckBox.s
+
+# target to generate assembly for a file
+CheckBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/CheckBox.cpp.s
+.PHONY : CheckBox.cpp.s
+
 Control.obj: Control.cpp.obj
 .PHONY : Control.obj
 
@@ -176,6 +200,102 @@ Form.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Form.cpp.s
 .PHONY : Form.cpp.s
 
+Label.obj: Label.cpp.obj
+.PHONY : Label.obj
+
+# target to build an object file
+Label.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Label.cpp.obj
+.PHONY : Label.cpp.obj
+
+Label.i: Label.cpp.i
+.PHONY : Label.i
+
+# target to preprocess a source file
+Label.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Label.cpp.i
+.PHONY : Label.cpp.i
+
+Label.s: Label.cpp.s
+.PHONY : Label.s
+
+# target to generate assembly for a file
+Label.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Label.cpp.s
+.PHONY : Label.cpp.s
+
+ListBox.obj: ListBox.cpp.obj
+.PHONY : ListBox.obj
+
+# target to build an object file
+ListBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/ListBox.cpp.obj
+.PHONY : ListBox.cpp.obj
+
+ListBox.i: ListBox.cpp.i
+.PHONY : ListBox.i
+
+# target to preprocess a source file
+ListBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/ListBox.cpp.i
+.PHONY : ListBox.cpp.i
+
+ListBox.s: ListBox.cpp.s
+.PHONY : ListBox.s
+
+# target to generate assembly for a file
+ListBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/ListBox.cpp.s
+.PHONY : ListBox.cpp.s
+
+Panel.obj: Panel.cpp.obj
+.PHONY : Panel.obj
+
+# target to build an object file
+Panel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Panel.cpp.obj
+.PHONY : Panel.cpp.obj
+
+Panel.i: Panel.cpp.i
+.PHONY : Panel.i
+
+# target to preprocess a source file
+Panel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Panel.cpp.i
+.PHONY : Panel.cpp.i
+
+Panel.s: Panel.cpp.s
+.PHONY : Panel.s
+
+# target to generate assembly for a file
+Panel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/Panel.cpp.s
+.PHONY : Panel.cpp.s
+
+RadioButton.obj: RadioButton.cpp.obj
+.PHONY : RadioButton.obj
+
+# target to build an object file
+RadioButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/RadioButton.cpp.obj
+.PHONY : RadioButton.cpp.obj
+
+RadioButton.i: RadioButton.cpp.i
+.PHONY : RadioButton.i
+
+# target to preprocess a source file
+RadioButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/RadioButton.cpp.i
+.PHONY : RadioButton.cpp.i
+
+RadioButton.s: RadioButton.cpp.s
+.PHONY : RadioButton.s
+
+# target to generate assembly for a file
+RadioButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/RadioButton.cpp.s
+.PHONY : RadioButton.cpp.s
+
 String.obj: String.cpp.obj
 .PHONY : String.obj
 
@@ -199,6 +319,30 @@ String.s: String.cpp.s
 String.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/String.cpp.s
 .PHONY : String.cpp.s
+
+TextBox.obj: TextBox.cpp.obj
+.PHONY : TextBox.obj
+
+# target to build an object file
+TextBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/TextBox.cpp.obj
+.PHONY : TextBox.cpp.obj
+
+TextBox.i: TextBox.cpp.i
+.PHONY : TextBox.i
+
+# target to preprocess a source file
+TextBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/TextBox.cpp.i
+.PHONY : TextBox.cpp.i
+
+TextBox.s: TextBox.cpp.s
+.PHONY : TextBox.s
+
+# target to generate assembly for a file
+TextBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HW2.dir\build.make CMakeFiles/HW2.dir/TextBox.cpp.s
+.PHONY : TextBox.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -233,15 +377,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... HW2
+	@echo ... CheckBox.obj
+	@echo ... CheckBox.i
+	@echo ... CheckBox.s
 	@echo ... Control.obj
 	@echo ... Control.i
 	@echo ... Control.s
 	@echo ... Form.obj
 	@echo ... Form.i
 	@echo ... Form.s
+	@echo ... Label.obj
+	@echo ... Label.i
+	@echo ... Label.s
+	@echo ... ListBox.obj
+	@echo ... ListBox.i
+	@echo ... ListBox.s
+	@echo ... Panel.obj
+	@echo ... Panel.i
+	@echo ... Panel.s
+	@echo ... RadioButton.obj
+	@echo ... RadioButton.i
+	@echo ... RadioButton.s
 	@echo ... String.obj
 	@echo ... String.i
 	@echo ... String.s
+	@echo ... TextBox.obj
+	@echo ... TextBox.i
+	@echo ... TextBox.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

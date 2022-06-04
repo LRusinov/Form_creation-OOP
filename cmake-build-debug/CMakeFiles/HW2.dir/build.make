@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -124,12 +124,102 @@ CMakeFiles/HW2.dir/Form.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/Form.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\Form.cpp -o CMakeFiles\HW2.dir\Form.cpp.s
 
+CMakeFiles/HW2.dir/CheckBox.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/CheckBox.cpp.obj: ../CheckBox.cpp
+CMakeFiles/HW2.dir/CheckBox.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HW2.dir/CheckBox.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/CheckBox.cpp.obj -MF CMakeFiles\HW2.dir\CheckBox.cpp.obj.d -o CMakeFiles\HW2.dir\CheckBox.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\CheckBox.cpp
+
+CMakeFiles/HW2.dir/CheckBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/CheckBox.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\CheckBox.cpp > CMakeFiles\HW2.dir\CheckBox.cpp.i
+
+CMakeFiles/HW2.dir/CheckBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/CheckBox.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\CheckBox.cpp -o CMakeFiles\HW2.dir\CheckBox.cpp.s
+
+CMakeFiles/HW2.dir/Label.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/Label.cpp.obj: ../Label.cpp
+CMakeFiles/HW2.dir/Label.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HW2.dir/Label.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/Label.cpp.obj -MF CMakeFiles\HW2.dir\Label.cpp.obj.d -o CMakeFiles\HW2.dir\Label.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\Label.cpp
+
+CMakeFiles/HW2.dir/Label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/Label.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\Label.cpp > CMakeFiles\HW2.dir\Label.cpp.i
+
+CMakeFiles/HW2.dir/Label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/Label.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\Label.cpp -o CMakeFiles\HW2.dir\Label.cpp.s
+
+CMakeFiles/HW2.dir/ListBox.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/ListBox.cpp.obj: ../ListBox.cpp
+CMakeFiles/HW2.dir/ListBox.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HW2.dir/ListBox.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/ListBox.cpp.obj -MF CMakeFiles\HW2.dir\ListBox.cpp.obj.d -o CMakeFiles\HW2.dir\ListBox.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\ListBox.cpp
+
+CMakeFiles/HW2.dir/ListBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/ListBox.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\ListBox.cpp > CMakeFiles\HW2.dir\ListBox.cpp.i
+
+CMakeFiles/HW2.dir/ListBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/ListBox.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\ListBox.cpp -o CMakeFiles\HW2.dir\ListBox.cpp.s
+
+CMakeFiles/HW2.dir/RadioButton.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/RadioButton.cpp.obj: ../RadioButton.cpp
+CMakeFiles/HW2.dir/RadioButton.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HW2.dir/RadioButton.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/RadioButton.cpp.obj -MF CMakeFiles\HW2.dir\RadioButton.cpp.obj.d -o CMakeFiles\HW2.dir\RadioButton.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\RadioButton.cpp
+
+CMakeFiles/HW2.dir/RadioButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/RadioButton.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\RadioButton.cpp > CMakeFiles\HW2.dir\RadioButton.cpp.i
+
+CMakeFiles/HW2.dir/RadioButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/RadioButton.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\RadioButton.cpp -o CMakeFiles\HW2.dir\RadioButton.cpp.s
+
+CMakeFiles/HW2.dir/TextBox.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/TextBox.cpp.obj: ../TextBox.cpp
+CMakeFiles/HW2.dir/TextBox.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HW2.dir/TextBox.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/TextBox.cpp.obj -MF CMakeFiles\HW2.dir\TextBox.cpp.obj.d -o CMakeFiles\HW2.dir\TextBox.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\TextBox.cpp
+
+CMakeFiles/HW2.dir/TextBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/TextBox.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\TextBox.cpp > CMakeFiles\HW2.dir\TextBox.cpp.i
+
+CMakeFiles/HW2.dir/TextBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/TextBox.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\TextBox.cpp -o CMakeFiles\HW2.dir\TextBox.cpp.s
+
+CMakeFiles/HW2.dir/Panel.cpp.obj: CMakeFiles/HW2.dir/flags.make
+CMakeFiles/HW2.dir/Panel.cpp.obj: ../Panel.cpp
+CMakeFiles/HW2.dir/Panel.cpp.obj: CMakeFiles/HW2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HW2.dir/Panel.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HW2.dir/Panel.cpp.obj -MF CMakeFiles\HW2.dir\Panel.cpp.obj.d -o CMakeFiles\HW2.dir\Panel.cpp.obj -c C:\Users\Lyubo\CLionProjects\HW\Panel.cpp
+
+CMakeFiles/HW2.dir/Panel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW2.dir/Panel.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lyubo\CLionProjects\HW\Panel.cpp > CMakeFiles\HW2.dir\Panel.cpp.i
+
+CMakeFiles/HW2.dir/Panel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW2.dir/Panel.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lyubo\CLionProjects\HW\Panel.cpp -o CMakeFiles\HW2.dir\Panel.cpp.s
+
 # Object files for target HW2
 HW2_OBJECTS = \
 "CMakeFiles/HW2.dir/String.cpp.obj" \
 "CMakeFiles/HW2.dir/main.cpp.obj" \
 "CMakeFiles/HW2.dir/Control.cpp.obj" \
-"CMakeFiles/HW2.dir/Form.cpp.obj"
+"CMakeFiles/HW2.dir/Form.cpp.obj" \
+"CMakeFiles/HW2.dir/CheckBox.cpp.obj" \
+"CMakeFiles/HW2.dir/Label.cpp.obj" \
+"CMakeFiles/HW2.dir/ListBox.cpp.obj" \
+"CMakeFiles/HW2.dir/RadioButton.cpp.obj" \
+"CMakeFiles/HW2.dir/TextBox.cpp.obj" \
+"CMakeFiles/HW2.dir/Panel.cpp.obj"
 
 # External object files for target HW2
 HW2_EXTERNAL_OBJECTS =
@@ -138,11 +228,17 @@ HW2.exe: CMakeFiles/HW2.dir/String.cpp.obj
 HW2.exe: CMakeFiles/HW2.dir/main.cpp.obj
 HW2.exe: CMakeFiles/HW2.dir/Control.cpp.obj
 HW2.exe: CMakeFiles/HW2.dir/Form.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/CheckBox.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/Label.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/ListBox.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/RadioButton.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/TextBox.cpp.obj
+HW2.exe: CMakeFiles/HW2.dir/Panel.cpp.obj
 HW2.exe: CMakeFiles/HW2.dir/build.make
 HW2.exe: CMakeFiles/HW2.dir/linklibs.rsp
 HW2.exe: CMakeFiles/HW2.dir/objects1.rsp
 HW2.exe: CMakeFiles/HW2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HW2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lyubo\CLionProjects\HW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable HW2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\HW2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

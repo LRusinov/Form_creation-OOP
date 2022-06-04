@@ -9,21 +9,11 @@
 
 class Label : public Control {
 public:
-    Label(const int x, const int y, const String &content) {
-        size = Size(content.get_length(), 1);
-        type = ControlType::OUTPUTCONTROL;
-        setPosition(x, y);
-        text = content;
-        status = text;
-    }
+    Label(const int x, const int y, const String &content);
 
-    void printDescription() const override {
-        std::cout << text << std::endl;
-    }
+    void printDescription() const override ;
 
-    void visualisation() const override {
-        std::cout << text;
-    }
+    void visualisation() const override;
 };
 
 #endif //HW2_LABEL_H

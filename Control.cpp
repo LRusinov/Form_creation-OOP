@@ -11,7 +11,14 @@ Control::Control() {
 }
 
 void Control::setSize(const Size &size) {
-    this->size = size;
+    if (size.width < 1 || size.height < 1) {
+        this->size.width = 0;
+        this->size.height = 0;
+        throw "Invalid size";
+    } else {
+        this->size.width = size.width;
+        this->size.height = size.height;
+    }
 }
 
 void Control::setText(const String &text) {
@@ -19,8 +26,12 @@ void Control::setText(const String &text) {
 }
 
 void Control::setPosition(const int coord1, const int coord2) {
-    position[0] = coord1;
-    position[1] = coord2;
+    if (coord1 < 0 || coord2 < 0) {
+        throw "Invalid Coords";
+    } else {
+        position[0] = coord1;
+        position[1] = coord2;
+    }
 }
 
 int Control::getID() const {
@@ -55,7 +66,8 @@ int Control::getPosition(int n) const {
         return position[1];
     }
 }
-int Control::getWidth()const{
+
+int Control::getWidth() const {
     return size.width;
 }
 

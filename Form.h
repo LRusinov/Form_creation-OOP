@@ -14,7 +14,8 @@ private:
     Vector<Control *> controls;
     String name;
 public:
-    Form(const String& name);
+    Form(const String &name);
+
     void preview();
 
     void addControl(Control *newControl);

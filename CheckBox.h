@@ -9,48 +9,15 @@
 
 class CheckBox : public Control {
 public:
-    CheckBox();
+    CheckBox()=default;
 
-    CheckBox(const int x, const int y, const String &text, const bool ifChecked) {
-        size = Size(text.get_length() + 4, 1);
-        type = ControlType::INPUTCONTROL;
-        setPosition(x, y);
-        this->text = text;
-        if (ifChecked) {
-            status = "Checked";
-        } else {
-            status = "Unchecked";
-        }
-    }
+    CheckBox(int x, int y, const String &text, bool ifChecked) ;
 
-    CheckBox &operator=(const CheckBox &other) {
+    CheckBox &operator=(const CheckBox &other) ;
 
-        this->size = other.size;
-        this->type = other.type;
-        setPosition(other.position[0], other.position[1]);
-        this->status = other.status;
-        this->text = other.text;
-        return *this;
-    }
-
-    void printDescription() const override {
-        std::cout << text << std::endl;
-    }
-    String getText()const{
-        return text;
-    }
-    void visualisation()const override{
-        if(status == "Checked"){
-            std::cout<<"[X] ";}
-        else{
-            std::cout<<"[ ] ";
-        }
-        std::cout << text;
-    }
+    void printDescription() const override ;
+    String getText()const;
+    void visualisation()const override;
 };
-
-CheckBox::CheckBox() {
-
-}
 
 #endif //HW2_CHECKBOX_H
