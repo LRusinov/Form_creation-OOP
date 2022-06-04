@@ -19,10 +19,10 @@ int main() {
 
     ListBox lBox(1, 0, vec, 1);
 
-    RadioBox rButton(2, 11, "Radio button a;Radio button b;Radio button c;", 1);
+    RadioBox rButton(2, 34, "Radio button a;Radio button b;Radio button c;", 1);
 
     TextBox tBox(6, 0, "The text box will visualize 12 symbols!", 3, 4);
-    TextBox tBox2(6, 0, "Tbox after panel", 4, 6);
+    TextBox tBox2(3, 0, "Tbox after panel", 4, 6);
 
 
 

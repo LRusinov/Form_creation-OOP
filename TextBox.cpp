@@ -23,9 +23,12 @@ void TextBox::printDescription() const {
 void TextBox::setStatus() {
 
     int counter = 0;
-    while (counter < size.width * size.height) {
+    int textSize = text.get_length();
+    while (counter < size.width * size.height && counter!=textSize) {
         for (int i = 0; i < size.height; ++i) {
+            if(counter==textSize) break;
             for (int j = 0; j < size.width; ++j) {
+                if(counter==textSize) break;
                 status.pushBack(text[counter]);
                 counter++;
             }
