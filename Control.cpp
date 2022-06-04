@@ -23,7 +23,7 @@ String Control::getStatus() const {
     return status;
 }
 
-String Control::idToString() const {
+const String Control::idToString() const {
     String numInString;
     int digitsCount = 0;
     int num = id;
@@ -55,5 +55,17 @@ int Control::getWidth() const {
 
 int Control::getHeight() const {
     return size.height;
+}
+
+int Control::getId() const {
+    return id;
+}
+
+void Control::setText(const String &newText) {
+    this->text = newText;
+}
+
+ControlType Control::getType() const {
+    return type;
 }
 

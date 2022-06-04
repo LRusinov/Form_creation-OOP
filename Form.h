@@ -17,6 +17,11 @@ public:
 
     void addControl(Control *newControl);
 
+    Control* operator[](int index)const;
+
+    String getStatus()const;
+
+    void changeText(int n,const String& newText);
 };
 
 #endif //HW2_FORM_H

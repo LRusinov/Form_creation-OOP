@@ -27,6 +27,7 @@ void Panel::add(Control *newControl) {
     }
 
     collection.pushBack(newControl);
+    setStatus();
 }
 
 void Panel::printDescription() const {
@@ -38,7 +39,7 @@ void Panel::setStatus() {
 
     for (int i = 0; i < controlsNum; ++i) {
         status.Concat(collection[i]->idToString());
-        status.pushBack(' ');
+        status.Concat(" ");
         status.Concat(collection[i]->getStatus());
         if (i != controlsNum - 1) {
             status.pushBack('|');

@@ -71,4 +71,38 @@ void Form::preview() {
     }
 }
 
+Control *Form::operator[](int index) const {
+    return controls[index];
+}
+
+String Form::getStatus() const {
+    String result;
+
+    int sizeOfControls = controls.get_size();
+
+    for (int i = 0; i < sizeOfControls; ++i) {
+        result.Concat(controls[i]->idToString());
+        result.Concat(" ");
+        result.Concat(controls[i]->getStatus());
+        result.pushBack('\n');
+    }
+    return result;
+}
+
+void Form::changeText(int n, const String &newText) {
+    int sizeOfControls = controls.get_size();
+    for (int i = 0; i < sizeOfControls; ++i) {
+        if (controls[i]->getId() == n) {
+            if (controls[i]->getType() == ControlType::OUTPUTCONTROL ||
+                controls[i]->getType() == ControlType::IOCTONROL) {
+                controls[i]->setText(newText);
+            } else {
+                std::cout << "It is not output control!";
+            }
+            return;
+        }
+    }
+    std::cout << "No id found";
+}
+
 

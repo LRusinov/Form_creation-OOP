@@ -52,11 +52,17 @@ public:
 
     int getHeight() const;
 
+    int getId()const;
+
+    ControlType getType() const;
+
+    void setText(const String &newText);
+
     virtual void printDescription() const = 0;
 
     String getStatus() const;
 
-    String idToString() const;
+    const String idToString() const;
 
     virtual void visualisation() const = 0;
 
