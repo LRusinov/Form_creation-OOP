@@ -24,8 +24,7 @@ RadioBox::RadioBox(const int x, const int y, const String &string, const int sel
                 }
 
                 CheckBox newCheckBox(x + optionsCounter, option.get_length(), option, flag);
-
-                flag = false;
+                
                 options.pushBack(newCheckBox);
                 option = "";
             }
@@ -34,7 +33,7 @@ RadioBox::RadioBox(const int x, const int y, const String &string, const int sel
         size = Size(maxLen, optionsCounter);
         status = options[selected].getText();
     }
-    catch (char *exc) {
+    catch (const char *exc) {
         std::cout << exc;
     }
 }

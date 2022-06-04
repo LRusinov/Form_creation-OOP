@@ -8,7 +8,7 @@ Label::Label(const int x, const int y, const String &content) {
         text = content;
         status = text;
     }
-    catch (char *exc) {
+    catch (const char *exc) {
         std::cout << exc;
     }
 }

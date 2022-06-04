@@ -9,7 +9,7 @@
 
 class Label : public Control {
 public:
-    Label(const int x, const int y, const String &content);
+    Label(int x, int y, const String &content);
 
     void printDescription() const override ;
 

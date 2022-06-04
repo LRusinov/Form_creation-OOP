@@ -38,7 +38,7 @@ public:
 
 protected:
     const int id = ++nextID;
-    int position[2];
+    int position[2]{};
     Size size;
     String text;
     ControlType type;
@@ -49,17 +49,11 @@ public:
 
     ~Control() = default;
 
-    void setSize(const Size &size);
-
-    void setText(const String &text);
-
     void setPosition(int coord1, int coord2);
 
     int getWidth() const;
 
     virtual void printDescription() const = 0;
-
-    int getID() const;
 
     String getStatus() const;
 

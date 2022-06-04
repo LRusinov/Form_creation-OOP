@@ -6,8 +6,8 @@
 template<typename T>
 class Vector {
 private:
-    size_t size;
-    size_t capacity;
+    size_t size{};
+    size_t capacity{};
     T *data;
     static const size_t DEFAULT_CAPACITY = 8;
     static const size_t RESIZE_FACTOR = 2;
@@ -70,7 +70,7 @@ public:
         return capacity;
     }
 
-    const bool isEmpty() const {
+    bool isEmpty() const {
         return size == 0;
     }
 

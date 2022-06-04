@@ -10,7 +10,7 @@
 class TextBox : public Control {
 private:
 public:
-    TextBox(const int x, const int y, const String &string, const int h, const int w);
+    TextBox(int x, int y, const String &string, int h, int w);
 
     void printDescription() const override;
 
@@ -18,7 +18,6 @@ public:
 
     void visualisation() const override;
 
-    String getText();
 };
 
 #endif //HW2_TEXTBOX_H

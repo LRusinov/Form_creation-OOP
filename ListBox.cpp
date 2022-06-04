@@ -12,7 +12,7 @@ ListBox::ListBox(const int x, const int y, const Vector<String> &ls, const int s
         list = ls;
         status = list[selected];
     }
-    catch (char *exc) {
+    catch (const char *exc) {
         std::cout << exc;
     }
 }

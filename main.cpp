@@ -1,9 +1,6 @@
-#include <iostream>
 #include "String.h"
 #include "Vector.h"
-#include <cmath>
 #include "Panel.h"
-#include "Control.h"
 #include "CheckBox.h"
 #include "Form.h"
 #include "Label.h"

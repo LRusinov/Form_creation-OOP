@@ -14,7 +14,7 @@ private:
     Vector<CheckBox> options;
     int selected;
 public:
-    RadioBox(const int x, const int y, const String &string, const int selected) ;
+    RadioBox(int x, int y, const String &string, int selected) ;
 
     void printDescription() const override ;
 

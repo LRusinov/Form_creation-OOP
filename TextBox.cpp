@@ -1,9 +1,5 @@
 #include "TextBox.h"
 
-String getText() {
-
-}
-
 
 TextBox::TextBox(const int x, const int y, const String &string, const int h, const int w) {
     try {
@@ -13,7 +9,7 @@ TextBox::TextBox(const int x, const int y, const String &string, const int h, co
         setPosition(x, y);
         setStatus();
     }
-    catch (char *exc) {
+    catch (const char *exc) {
         std::cout << exc;
     }
 }
@@ -38,8 +34,4 @@ void TextBox::setStatus() {
 
 void TextBox::visualisation() const {
     std::cout << status;
-}
-
-String TextBox::getText() {
-    return text;
 }

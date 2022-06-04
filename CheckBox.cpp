@@ -16,7 +16,7 @@ CheckBox::CheckBox(const int x, const int y, const String &text, const bool ifCh
             status = "Unchecked";
         }
     }
-    catch (char *exc) {
+    catch (const char *exc) {
         std::cout << exc;
     }
 }

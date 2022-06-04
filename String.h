@@ -24,16 +24,16 @@ public:
     ~String();
 
     // Methods
-    void resize(const size_t size);
+    void resize(size_t size);
     void Concat(const String& other);
-    void pushBack(const char element);
+    void pushBack(char element);
     size_t get_length()const;
     bool isEmpty()const;
     char* toCharArray()const;
 
     // Operators
-    char& operator [](const size_t index);
-    const char& operator [](const size_t index) const;
+    char& operator [](size_t index);
+    const char& operator [](size_t index) const;
     String& operator =(const String& other);
     String& operator +(const String& other);
     String& operator +(char* other);

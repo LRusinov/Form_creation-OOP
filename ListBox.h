@@ -11,7 +11,7 @@ private:
     Vector<String> list;
     int selected;
 public:
-    ListBox(const int x, const int y, const Vector<String> &ls, const int selected) ;
+    ListBox(int x, int y, const Vector<String> &ls, int selected) ;
 
     void printDescription() const override ;
 

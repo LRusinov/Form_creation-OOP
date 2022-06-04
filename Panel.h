@@ -9,7 +9,7 @@ class Panel : public Control {
 private:
     Vector<Control *> collection;
 public:
-    Panel(const int x, const int y, const String &string) ;
+    Panel(int x, int y, const String &string) ;
 
     void add(Control *newControl);
 

@@ -10,21 +10,6 @@ Control::Control() {
     type = ControlType::DEFAULT;
 }
 
-void Control::setSize(const Size &size) {
-    if (size.width < 1 || size.height < 1) {
-        this->size.width = 0;
-        this->size.height = 0;
-        throw "Invalid size";
-    } else {
-        this->size.width = size.width;
-        this->size.height = size.height;
-    }
-}
-
-void Control::setText(const String &text) {
-    this->text = text;
-}
-
 void Control::setPosition(const int coord1, const int coord2) {
     if (coord1 < 0 || coord2 < 0) {
         throw "Invalid Coords";
@@ -32,10 +17,6 @@ void Control::setPosition(const int coord1, const int coord2) {
         position[0] = coord1;
         position[1] = coord2;
     }
-}
-
-int Control::getID() const {
-    return id;
 }
 
 String Control::getStatus() const {
