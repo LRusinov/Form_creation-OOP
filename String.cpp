@@ -59,9 +59,13 @@ void String::resize(const size_t size) {
 }
 
 void String::Concat(const String& other) {
-
+    if(size==0){
+        str = new char [other.size+1];
+        strcpy(str,other.str);
+        size=other.size;
+    }else{
     resize(size + other.size);
-    strcat(str, other.str);
+    strcat(str, other.str);}
 }
 
 void String::pushBack(const char element) {//adding element at the end of str

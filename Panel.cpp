@@ -35,16 +35,20 @@ void Panel::printDescription() const {
 }
 
 void Panel::setStatus() {
+
+    String* buff = new String();
     int controlsNum = collection.get_size();
 
     for (int i = 0; i < controlsNum; ++i) {
-        status.Concat(collection[i]->idToString());
-        status.Concat(" ");
-        status.Concat(collection[i]->getStatus());
+        buff->Concat(collection[i]->idToString());
+        buff->Concat(" ");
+        buff->Concat(collection[i]->getStatus());
         if (i != controlsNum - 1) {
             status.pushBack('|');
         }
     }
+    status = *buff;
+    delete buff;
 }
 
 void Panel::visualisation() const {

@@ -10,13 +10,13 @@ RadioBox::RadioBox(const int x, const int y, const String &string, const int sel
         size_t sizeOfStr = string.get_length();
         int optionsCounter = 0;
         int maxLen = 0;
-        String option;
+        String* option = new String();
         for (size_t i = 0; i < sizeOfStr; ++i) {
             if (string[i] != ';') {
-                option.pushBack(string[i]);
+                option->pushBack(string[i]);
             } else {
-                if (option.get_length() > maxLen) {
-                    maxLen = option.get_length();
+                if (option->get_length() > maxLen) {
+                    maxLen = option->get_length();
                 }
                 optionsCounter++;
                 bool flag = false;
@@ -24,12 +24,15 @@ RadioBox::RadioBox(const int x, const int y, const String &string, const int sel
                     flag = true;
                 }
 
-                CheckBox newCheckBox(x + optionsCounter, option.get_length(), option, flag);
-                
+                CheckBox newCheckBox(x + optionsCounter, option->get_length(), *option, flag);
+
                 options.pushBack(newCheckBox);
-                option = "";
+                delete option;
+                option = new String();
             }
+
         }
+        delete option;
         optionsCounter++;
         size = Size(maxLen, optionsCounter);
         status = options[selected].getText();
