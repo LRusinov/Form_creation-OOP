@@ -1,6 +1,7 @@
 #include "Label.h"
 
 Label::Label(const int x, const int y, const String &content) {
+
     try {
         size = Size(content.get_length(), 1);
         type = ControlType::OUTPUTCONTROL;
@@ -8,6 +9,7 @@ Label::Label(const int x, const int y, const String &content) {
         text = content;
         status = text;
     }
+
     catch (const char *exc) {
         std::cout << exc;
     }

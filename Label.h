@@ -1,7 +1,3 @@
-//
-// Created by Lyubo on 5/22/2022.
-//
-
 #ifndef HW2_LABEL_H
 #define HW2_LABEL_H
 

@@ -27,6 +27,7 @@ String Control::idToString() const {
     String numInString;
     int digitsCount = 0;
     int num = id;
+
     while (num != 0) {
         digitsCount++;
         num /= 10;
@@ -50,5 +51,9 @@ int Control::getPosition(int n) const {
 
 int Control::getWidth() const {
     return size.width;
+}
+
+int Control::getHeight() const {
+    return size.height;
 }
 

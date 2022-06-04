@@ -2,6 +2,7 @@
 
 
 TextBox::TextBox(const int x, const int y, const String &string, const int h, const int w) {
+
     try {
         this->size = Size(w, h);
         this->type = ControlType::IOCTONROL;
@@ -9,6 +10,7 @@ TextBox::TextBox(const int x, const int y, const String &string, const int h, co
         setPosition(x, y);
         setStatus();
     }
+
     catch (const char *exc) {
         std::cout << exc;
     }

@@ -1266,6 +1266,7 @@ CMakeFiles/HW2.dir/TextBox.cpp.obj: ../TextBox.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h
 
 CMakeFiles/HW2.dir/main.cpp.obj: ../main.cpp \
+  ../String.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -1398,13 +1399,10 @@ CMakeFiles/HW2.dir/main.cpp.obj: ../main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
-  ../String.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
   ../Vector.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
-  C:/Program\ Files/JetBrains/CLion\ 2022.1.1/bin/mingw/x86_64-w64-mingw32/include/math.h \
   ../Panel.h \
   ../Control.h \
   ../CheckBox.h \

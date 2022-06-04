@@ -1,4 +1,3 @@
-
 #ifndef HW2_LISTBOX_H
 #define HW2_LISTBOX_H
 
@@ -10,6 +9,7 @@ class ListBox : public Control {
 private:
     Vector<String> list;
     int selected;
+
 public:
     ListBox(int x, int y, const Vector<String> &ls, int selected) ;
 

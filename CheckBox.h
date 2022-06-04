@@ -1,7 +1,3 @@
-//
-// Created by Lyubo on 5/22/2022.
-//
-
 #ifndef HW2_CHECKBOX_H
 #define HW2_CHECKBOX_H
 
@@ -16,7 +12,9 @@ public:
     CheckBox &operator=(const CheckBox &other) ;
 
     void printDescription() const override ;
+
     String getText()const;
+
     void visualisation()const override;
 };
 

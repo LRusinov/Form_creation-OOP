@@ -1,7 +1,3 @@
-//
-// Created by Lyubo on 5/22/2022.
-//
-
 #ifndef HW2_CONTROL_H
 #define HW2_CONTROL_H
 
@@ -33,6 +29,7 @@ struct Size {
 class Control {
 protected:
     static int nextID;
+
 public:
     int getPosition(int n) const;
 
@@ -52,6 +49,8 @@ public:
     void setPosition(int coord1, int coord2);
 
     int getWidth() const;
+
+    int getHeight() const;
 
     virtual void printDescription() const = 0;
 

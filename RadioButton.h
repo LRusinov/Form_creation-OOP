@@ -1,7 +1,3 @@
-//
-// Created by Lyubo on 5/22/2022.
-//
-
 #ifndef HW2_RADIOBUTTON_H
 #define HW2_RADIOBUTTON_H
 
@@ -13,6 +9,7 @@ class RadioBox : public Control {
 private:
     Vector<CheckBox> options;
     int selected;
+
 public:
     RadioBox(int x, int y, const String &string, int selected) ;
 

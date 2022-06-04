@@ -1,7 +1,3 @@
-//
-// Created by Lyubo on 5/22/2022.
-//
-
 #ifndef HW2_FORM_H
 #define HW2_FORM_H
 
@@ -13,6 +9,7 @@ class Form {
 private:
     Vector<Control *> controls;
     String name;
+
 public:
     Form(const String &name);
 

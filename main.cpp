@@ -15,11 +15,11 @@ int main() {
 
     CheckBox cBox(0, 0, "Check box ", true);
 
-    Label lbl(1, 0, "Please chose one of the options: ");
+    Label lbl(2, 0, "Please chose one of the options: ");
 
-    ListBox lBox(0, 11, vec, 1);
+    ListBox lBox(1, 0, vec, 1);
 
-    RadioBox rButton(1, 11, "Radio button a;Radio button b;Radio button c;", 1);
+    RadioBox rButton(2, 11, "Radio button a;Radio button b;Radio button c;", 1);
 
     TextBox tBox(6, 0, "The text box will visualize 12 symbols!", 3, 4);
     TextBox tBox2(6, 0, "Tbox after panel", 4, 6);

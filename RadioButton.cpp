@@ -1,6 +1,7 @@
 #include "RadioButton.h"
 
 RadioBox::RadioBox(const int x, const int y, const String &string, const int selected) {
+
     try {
         type = ControlType::INPUTCONTROL;
         this->text = string;
@@ -33,6 +34,7 @@ RadioBox::RadioBox(const int x, const int y, const String &string, const int sel
         size = Size(maxLen, optionsCounter);
         status = options[selected].getText();
     }
+
     catch (const char *exc) {
         std::cout << exc;
     }
@@ -43,10 +45,12 @@ void RadioBox::printDescription() const {
 }
 
 void RadioBox::visualisation() const {
-    for (int i = 0; i < options.get_size(); ++i) {
+    int optionsNum = options.get_size();
+
+    for (int i = 0; i < optionsNum; ++i) {
         options[i].visualisation();
 
-        if (i + 1 != options.get_size()) {
+        if (i + 1 != optionsNum) {
             std::cout << std::endl;
         }
     }

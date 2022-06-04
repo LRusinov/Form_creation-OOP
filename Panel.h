@@ -8,6 +8,7 @@
 class Panel : public Control {
 private:
     Vector<Control *> collection;
+
 public:
     Panel(int x, int y, const String &string) ;
 
