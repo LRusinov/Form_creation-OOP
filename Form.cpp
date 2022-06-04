@@ -1,6 +1,12 @@
 
 #include "Form.h"
 
+
+Form::Form(const String &name) {
+this->name = name;
+}
+
+
 void Form::addControl(Control *newControl) {
     if (controls.get_size() == 0) {
         controls.pushBack(newControl);
@@ -21,14 +27,13 @@ void Form::addControl(Control *newControl) {
 }
 
 void Form::preview() {
+
+    std::cout<<name<<std::endl;
     controls[0]->visualisation();
-    if(controls[0]->getPosition(0)!=controls[1]->getPosition(0)){
-        std::cout<<std::endl;
-    }
     for (int i = 1; i < controls.get_size(); ++i) {
         if(controls[i]->getPosition(0)==controls[i-1]->getPosition(0)){
-            if(controls[i]->getPosition(1)-controls[i-1]->getPosition(1)>1){
-                int x = controls[i]->getPosition(1)-controls[i-1]->getPosition(1);
+            if(controls[i]->getPosition(1)-controls[i-1]->getWidth()-controls[i-1]->getPosition(1)>1){
+                int x = controls[i]->getPosition(1)-controls[i-1]->getWidth()-controls[i-1]->getPosition(1);
                 while (x!=1){
                     std::cout<<" ";
                     x--;
@@ -48,3 +53,5 @@ void Form::preview() {
         }
     }
 }
+
+

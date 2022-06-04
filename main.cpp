@@ -20,19 +20,21 @@ int main() {
 
     Label lbl(1, 0, "label text: ");
 
-    ListBox lBox(0, 2, vec, 1);
+    ListBox lBox(0, 9, vec, 1);
 
-    RadioBox rButton(6, 0, "a;b;c;", 1);
+    RadioBox rButton(1, 11, "a;b;c;", 1);
 
-    TextBox tBox(10, 0, "1234 67sdfsdfsd89", 3, 4);
+    TextBox tBox(6, 0, "1234 67sdfsdfsd89", 3, 4);
 
 
-    Form f;
-    f.addControl(&cBox);
-    f.addControl(&lbl);
-    f.addControl(&lBox);
-    f.addControl(&rButton);
-    f.addControl(&tBox);
+    Form f("Name");
+    Panel p(0,0,"Name");
+    p.add(&cBox);
+    p.add(&lbl);
+    p.add(&lBox);
+    p.add(&rButton);
+    p.add(&tBox);
+    f.addControl(&p);
     f.preview();
     return 0;
 }

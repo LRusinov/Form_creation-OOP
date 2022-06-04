@@ -41,9 +41,9 @@ public:
     }
     void visualisation()const override{
         if(status == "Checked"){
-            std::cout<<"[X]";}
+            std::cout<<"[X] ";}
         else{
-            std::cout<<"[ ]";
+            std::cout<<"[ ] ";
         }
         std::cout << text;
     }

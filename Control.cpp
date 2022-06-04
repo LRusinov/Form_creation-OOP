@@ -56,6 +56,6 @@ int Control::getPosition(int n) const {
     }
 }
 int Control::getWidth()const{
-
+    return size.width;
 }
 

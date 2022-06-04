@@ -47,12 +47,16 @@ protected:
 public:
     Control();
 
+    ~Control() = default;
+
     void setSize(const Size &size);
 
     void setText(const String &text);
 
     void setPosition(const int coord1, const int coord2);
-    int getWidth()const;
+
+    int getWidth() const;
+
     virtual void printDescription() const = 0;
 
     int getID() const;
@@ -62,6 +66,7 @@ public:
     String idToString() const;
 
     virtual void visualisation() const = 0;
+
 };
 
 #endif //HW2_CONTROL_H
