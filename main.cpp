@@ -22,7 +22,7 @@ int main() {
     RadioBox rButton(2, 34, "Radio button a;Radio button b;Radio button c;", 1);
 
     TextBox tBox(6, 0, "The text box will visualize 12 symbols!", 3, 4);
-    TextBox tBox2(3, 0, "Tbox after panel", 4, 6);
+    TextBox tBox2(9, 0, "Tbox after panel", 4, 6);
 
 
 

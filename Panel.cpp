@@ -28,6 +28,13 @@ void Panel::add(Control *newControl) {
 
     collection.pushBack(newControl);
     setStatus();
+    int newWidth = newControl->getWidth();
+    if (newWidth < size.width) {
+        newWidth = size.width;
+    }
+    int newHeight = size.height + newControl->getHeight();
+
+    size = Size(newWidth, newHeight);
 }
 
 void Panel::printDescription() const {
@@ -36,7 +43,7 @@ void Panel::printDescription() const {
 
 void Panel::setStatus() {
 
-    String* buff = new String();
+    String *buff = new String();
     int controlsNum = collection.get_size();
 
     for (int i = 0; i < controlsNum; ++i) {

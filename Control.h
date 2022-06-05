@@ -11,7 +11,7 @@ enum class ControlType {
 
 };
 
-struct Size {
+struct Size {  //structure used for setting the size of control
     int width;
     int height;
 
@@ -28,13 +28,10 @@ struct Size {
 
 class Control {
 protected:
-    static int nextID;
-
-public:
-    int getPosition(int n) const;
+    static int nextID; //counter for the next id
 
 protected:
-    const int id = ++nextID;
+    const int id = ++nextID;//generating id
     int position[2]{};
     Size size;
     String text;
@@ -42,15 +39,19 @@ protected:
     String status;
 
 public:
+    //C-tors
     Control();
 
     ~Control() = default;
 
+    //Getters and setters
     void setPosition(int coord1, int coord2);
 
     int getWidth() const;
 
     int getHeight() const;
+
+    int getPosition(int n) const;
 
     int getId()const;
 
@@ -58,11 +59,12 @@ public:
 
     void setText(const String &newText);
 
-    virtual void printDescription() const = 0;
-
     String getStatus() const;
 
-    const String idToString() const;
+    //Other functions
+    virtual void printDescription() const = 0;
+
+    const String idToString() const; //converting int to String
 
     virtual void visualisation() const = 0;
 

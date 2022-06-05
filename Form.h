@@ -13,15 +13,15 @@ private:
 public:
     Form(const String &name);
 
-    void preview();
+    void preview();//printing the form
 
-    void addControl(Control *newControl);
+    void addControl(Control *newControl);//adding control and also keeps the vector sorted
 
     Control* operator[](int index)const;
 
     String getStatus()const;
 
-    void changeText(int n,const String& newText);
+    void changeText(int n,const String& newText);//changing the text of output control by given ID
 };
 
 #endif //HW2_FORM_H

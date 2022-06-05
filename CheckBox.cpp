@@ -1,7 +1,7 @@
 #include "CheckBox.h"
 
 CheckBox::CheckBox(const int x, const int y, const String &text, const bool ifChecked) {
-    \
+
     try {
         size = Size(text.get_length() + 4, 1);
         type = ControlType::INPUTCONTROL;
